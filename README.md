@@ -26,7 +26,7 @@ Este proyecto tiene como objetivo proporcionar un sitio web interactivo y funcio
 
 Para ejecutar el proyecto localmente
 
-1. Clona el repositorio en tu máquina local:
+Clona el repositorio en tu máquina local:
 ```bash
-git clone https://github.com/tuusuario/centro-universitario-florense.git
+[git clone https://github.com/tuusuario/centro-universitario-florense.git](https://github.com/XkaunanX/web-cuf.git)
 ```
