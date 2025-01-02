@@ -1,4 +1,4 @@
-# Proyecto de Centro Universitario Florense
+# Web del Centro Universitario Florense
 
 ## Descripción del Proyecto
 
