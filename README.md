@@ -26,11 +26,13 @@ Este proyecto tiene como objetivo proporcionar un sitio web interactivo y funcio
    
 2. **Formulario de Contacto**: Utiliza Formspree para gestionar los formularios de contacto sin necesidad de un servidor propio. Los usuarios pueden enviar consultas, solicitudes de información o comentarios fácilmente.
 
-3. **Interactividad Mejorada**: Se han implementado funcionalidades interactivas con JavaScript, como validaciones de formularios y efectos visuales para mejorar la experiencia del usuario.
+3. **Interactividad Mejorada**: Se han implementado funcionalidades interactivas con JavaScript, como validaciones de formularios, efectos visuales y gestión dinámica del contenido.
 
-4. **Carga de Contenido Dinámico**: Se utilizan técnicas de carga dinámica para insertar contenido HTML al cargar el documento. Esto permite mantener una estructura modular del sitio, mejorar el rendimiento y simplificar la gestión de actualizaciones.
+4. **Manipulación del DOM**: El sitio utiliza técnicas avanzadas de manipulación del DOM (Document Object Model) para actualizar y modificar elementos de la página en tiempo real, mejorando la experiencia del usuario sin recargar la página completa.
 
-5. **Accesibilidad**: El diseño se enfoca en ser accesible para todos los usuarios, asegurando una navegación sencilla y eficiente.
+5. **Carga de Contenido Dinámico**: Se utilizan técnicas de carga dinámica para insertar contenido HTML al cargar el documento. Esto permite mantener una estructura modular del sitio, mejorar el rendimiento y simplificar la gestión de actualizaciones.
+
+6. **Accesibilidad**: El diseño se enfoca en ser accesible para todos los usuarios, asegurando una navegación sencilla y eficiente.
 
 ## Instalación
 
