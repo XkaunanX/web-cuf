@@ -6,11 +6,11 @@ Este proyecto tiene como objetivo proporcionar un sitio web interactivo y funcio
 
 ## Tecnologías Utilizadas
 
-- ![HTML5](https://img.shields.io/badge/HTML5-orange?logo=html5&logoColor=white)
-- ![CSS3](https://img.shields.io/badge/CSS3-blue?logo=css3&logoColor=white)
-- ![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript&logoColor=white)
-- ![Bootstrap](https://img.shields.io/badge/Bootstrap-purple?logo=bootstrap&logoColor=white)
-- ![Formspree](https://img.shields.io/badge/Formspree-lightgrey?logo=formspree&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-orange?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-blue?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-purple?logo=bootstrap&logoColor=white)
+![Formspree](https://img.shields.io/badge/Formspree-lightgrey?logo=formspree&logoColor=black)
 
 - **HTML**: Para la estructura básica del sitio web.
 - **CSS**: Para el estilo visual, utilizando tanto estilos personalizados como clases de Bootstrap.
