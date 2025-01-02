@@ -28,7 +28,9 @@ Este proyecto tiene como objetivo proporcionar un sitio web interactivo y funcio
 
 3. **Interactividad Mejorada**: Se han implementado funcionalidades interactivas con JavaScript, como validaciones de formularios y efectos visuales para mejorar la experiencia del usuario.
 
-4. **Accesibilidad**: El diseño se enfoca en ser accesible para todos los usuarios, asegurando una navegación sencilla y eficiente.
+4. **Carga de Contenido Dinámico**: Se utilizan técnicas de carga dinámica para insertar contenido HTML al cargar el documento. Esto permite mantener una estructura modular del sitio, mejorar el rendimiento y simplificar la gestión de actualizaciones.
+
+5. **Accesibilidad**: El diseño se enfoca en ser accesible para todos los usuarios, asegurando una navegación sencilla y eficiente.
 
 ## Instalación
 
