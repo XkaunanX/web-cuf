@@ -28,5 +28,5 @@ Para ejecutar el proyecto localmente
 
 Clona el repositorio en tu máquina local:
 ```bash
-[git clone https://github.com/tuusuario/centro-universitario-florense.git](https://github.com/XkaunanX/web-cuf.git)
+git clone https://github.com/XkaunanX/web-cuf.git
 ```
