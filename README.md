@@ -11,6 +11,8 @@ Este proyecto tiene como objetivo proporcionar un sitio web interactivo y funcio
 ![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-purple?logo=bootstrap&logoColor=white)
 ![Formspree](https://img.shields.io/badge/Formspree-lightgrey?logo=formspree&logoColor=black)
+![Google Fonts](https://img.shields.io/badge/Google%20Fonts-red?logo=google&logoColor=white)
+![FontAwesome](https://img.shields.io/badge/FontAwesome-black?logo=fontawesome&logoColor=white)
 
 - **HTML**: Para la estructura básica del sitio web.
 - **CSS**: Para el estilo visual, utilizando tanto estilos personalizados como clases de Bootstrap.
