@@ -6,22 +6,11 @@ Este proyecto tiene como objetivo proporcionar un sitio web interactivo y funcio
 
 ## Tecnologías Utilizadas
 
-<div style="display: flex; justify-content: space-around; align-items: center;">
-    <!-- HTML Icon -->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/HTML5_logo_and_wordmark.svg" alt="HTML" width="50" height="50">
-    
-    <!-- CSS Icon -->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS" width="50" height="50">
-    
-    <!-- JavaScript Icon -->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/JavaScript-logo.png" alt="JavaScript" width="50" height="50">
-    
-    <!-- Bootstrap Icon -->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Bootstrap_logo_2020.svg" alt="Bootstrap" width="50" height="50">
-    
-    <!-- Formspree Icon -->
-    <img src="https://www.formspree.io/img/logo-mark.svg" alt="Formspree" width="50" height="50">
-</div>
+- ![HTML5](https://img.shields.io/badge/HTML5-orange?logo=html5&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/CSS3-blue?logo=css3&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript&logoColor=white)
+- ![Bootstrap](https://img.shields.io/badge/Bootstrap-purple?logo=bootstrap&logoColor=white)
+- ![Formspree](https://img.shields.io/badge/Formspree-lightgrey?logo=formspree&logoColor=black)
 
 - **HTML**: Para la estructura básica del sitio web.
 - **CSS**: Para el estilo visual, utilizando tanto estilos personalizados como clases de Bootstrap.
