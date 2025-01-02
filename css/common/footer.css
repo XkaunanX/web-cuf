@@ -1,0 +1,145 @@
+/* Estilos para el pie de página (footer) */
+footer {
+    width: 100%;
+    padding: 100px 50px 50px 50px;
+    background-size: cover;
+    color: var(--texto-secundario);
+}
+
+/* Contenedor del pie de página */
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    max-width: 1600px;
+    margin: auto;
+}
+
+/* Caja dentro del pie de página */
+.box-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+/* Estilos del logo dentro del pie de página */
+.box-footer .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-footer .logo img {
+    width: 60px;
+}
+
+/* Estilos para el texto de los términos en el pie de página */
+.box-footer .acerca-de {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Estilos para los títulos dentro del pie de página */
+.box-footer h2 {
+    margin-bottom: 30px;
+    color: var(--texto-primario);
+    font-weight: 500;
+}
+
+.box-footer div{
+    margin-top: 6px;
+}
+
+/* Enlaces dentro del pie de página */
+.box-footer a {
+    font-weight: 500;
+}
+
+/* Efecto hover en los enlaces */
+.box-footer a:hover {
+    color: var(--texto-hover);
+}
+
+/* Estilo de las imágenes dentro de los enlaces */
+.box-footer a img {
+    width: 25px;
+    filter: drop-shadow(0 1px 2px rgba(255, 255, 255, 0.134)) grayscale(100%);
+}
+
+/* Estilos para los iconos de redes sociales */
+.box-footer .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Estilos para los enlaces de iconos */
+.box-footer span a {
+    padding: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+/* Estilos del copyright */
+.box-copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+    font-weight: 400;
+}
+
+/* Estilo de los párrafos en el copyright */
+.box-copyright p {
+    margin-top: 20px;
+    color: var(--texto-primario);
+    font-style: italic;
+}
+
+/* Línea divisoria en el copyright */
+.box-copyright hr {
+    border: none;
+    height: 1px;
+    background-color: var(--texto-primario);
+}
+
+/* Estilos generales para la portada */
+.cover {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+
+/* Escala el icono al hacer hover */
+.icons a:hover i {
+    color: var(--texto-hover)
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 576px) {
+    .container-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .box-footer {
+        width: 100%;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .box-footer .terms {
+        max-width: none;
+    }
+}

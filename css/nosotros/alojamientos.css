@@ -1,0 +1,93 @@
+/* Alojamientos Section */
+.alojamientos {
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.alojamientos .container{
+    max-width: 1000px;
+}
+
+.alojamientos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.alojamientos p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.alojamientos ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.alojamientos ul li {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.casas {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.casa {
+    width: 30%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.casa:hover {
+    transform: translateY(-10px); /* Hover effect */
+}
+
+.casa-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ccc;
+}
+
+.casa-info {
+    padding: 20px;
+}
+
+.casa-info h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.casa-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .casa {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .alojamientos h2 {
+        font-size: 2rem;
+    }
+
+    .alojamientos p,
+    .alojamientos ul li {
+        font-size: 1rem;
+    }
+}

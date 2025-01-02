@@ -1,0 +1,72 @@
+/* Eventos Importantes Section */
+.eventos {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.eventos h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.evento {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #f7f7f7;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px; /* Limitar el ancho para no ocupar todo el espacio */
+    transition: transform 0.3s ease;
+}
+
+.evento:hover {
+    transform: translateY(-5px); /* Efecto al pasar el ratón */
+}
+
+.evento-icono img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.evento-info {
+    text-align: left;
+    max-width: 600px;
+}
+
+.evento-info h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.evento-info p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .evento {
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%; /* En pantallas pequeñas, puede ocupar todo el ancho */
+    }
+
+    .evento-icono {
+        margin-bottom: 20px;
+    }
+
+    .evento-info h3 {
+        font-size: 1.6rem;
+    }
+
+    .evento-info p {
+        font-size: 1rem;
+    }
+}

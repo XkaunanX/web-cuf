@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <!-- Metadatos para la configuración del documento -->
+        <meta charset="UTF-8"> <!-- Codificación de caracteres UTF-8 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidad con versiones anteriores de IE -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Optimización para dispositivos móviles -->
+
+        <!--SEO-->
+        <meta name="description" content="C.U.F. es un servicio habitacional sin fines de lucro, destinado a estudiantes de Las Flores, ubicado en la ciudad de La Plata. Ofrecemos alojamiento cómodo y accesible para quienes buscan un espacio seguro y cercano a su lugar de estudio."/>
+        <meta name="keywords" content="C.U.F, Centro de Estudiantes, Las Flores, Universidad, UNLP, Comunidad Estudiantil, Actividades Universitarias, Estudiantes UNLP, Eventos Estudiantiles, Vida Universitaria"/>
+        <meta name="author" content="Damian Piazza" />
+        <meta name="copyright" content="C.U.F. - 2024. Todos los derechos reservados."/>
+        <title>C.U.F - ¡Bienvenido!</title>
+
+        <!-- ICONO -->
+        <link rel="icon" href="img/icon.png">
+
+        <!-- FUENTES DE GOOGLE -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- ICONSCOUT -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+
+        <!-- CDN BOOTSTRAP -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- SCROLL REVEAL -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!-- ESTILOS DEL ÍNDICE -->
+        <link rel="stylesheet" href="css/common/common.css">
+        <link rel="stylesheet" href="css/common/loader.css">
+        <link rel="stylesheet" href="css/common/scrollbar.css">
+        <link rel="stylesheet" href="css/common/header.css">
+        <link rel="stylesheet" href="css/common/footer.css">
+        <link rel="stylesheet" href="css/contacto/contact-us.css">
+        
+
+    </head>
+
+    <body>
+
+        <div class="center-loader" id="onload">
+            <div class="typewriter">
+                <div class="slide"><i></i></div>
+                <div class="paper"></div>
+                <div class="keyboard"></div>
+            </div>
+        </div>
+
+        <main>
+
+            <section class="container-form">
+                <div class="content">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Información de contacto -->
+                            <div class="col-md-5 mr-auto">
+                                <h2>Contactanos📨</h2>
+                                <p class="mb-5">En el Centro de Estudiantes Florenses, estamos siempre disponibles para escuchar tus comentarios, sugerencias o cualquier inquietud que puedas tener.</p>
+                                
+                                <ul class="list-unstyled pl-md-5 mb-5">
+                                    <li class="d-flex text-black mb-2">
+                                        <span class="mr-3"><i class="fa-solid fa-map"></i></span>
+                                        259 Hipólito Yrigoyen, Las Flores. Provincia de Buenos Aires
+                                    </li>
+                                    <li class="d-flex text-black mb-2">
+                                        <span class="mr-3"><i class="fa-solid fa-phone"></i></span>
+                                        +54 11 2244-445272
+                                    </li>
+                                    <li class="d-flex text-black">
+                                        <span class="mr-3"><i class="fa-solid fa-envelope"></i></span>
+                                        centrouniversitarioflorense22@gmail.com
+                                    </li>
+                                </ul>
+                            </div>
+            
+                            <!-- Formulario de contacto -->
+                            <div class="col-md-6">
+                                <form id="contactForm" name="contactForm" novalidate="novalidate" action="https://formsubmit.co/damipiazza11@gmail.com" method="POST" redirect="">
+                                    <!-- Nombre -->
+                                    <div class="form-group">
+                                        <label for="name">Nombre</label>
+                                        <input type="text" class="form-control" name="name" id="name" required>
+                                    </div>
+            
+                                    <!-- Email -->
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" name="email" id="email" required>
+                                    </div>
+            
+                                    <!-- Mensaje -->
+                                    <div class="form-group">
+                                        <label for="message">Mensaje</label>
+                                        <textarea class="form-control" name="message" id="message" cols="30" rows="7" required></textarea>
+                                    </div>
+            
+                                    <!-- Botón de envío -->
+                                    <div class="form-group">
+                                        <input type="submit" value="Enviar Mensaje" class="btn btn-primary rounded-0 py-2 px-4">
+                                    </div>
+
+                                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/confirmar-correo.html">
+
+                                </form>
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>            
+
+        </main>
+
+    </body>
+
+    <!-- JavaScript opcional para el funcionamiento de la página -->
+    <!-- Primero carga jQuery, luego Popper.js, y finalmente Bootstrap JS -->
+
+    <!-- jQuery: Librería necesaria para algunas funcionalidades de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!-- Popper.js: Requiere Bootstrap para manejar los popups y tooltips -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS: Librería de JavaScript de Bootstrap que requiere jQuery y Popper.js para funcionar correctamente -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="js/common/loader.js"></script>
+    <script src="js/common/header.js"></script>
+    <script src="js/common/footer.js"></script>
+
+</html>

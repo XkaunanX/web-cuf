@@ -1,0 +1,46 @@
+:root {
+    --texto-primario: rgb(16, 30, 44); /* Equivalente a #101E2C */
+    --texto-secundario: rgb(33, 37, 41); /* Equivalente a #212529 */    
+    --texto-hover: rgba(16, 30, 44, 0.5); /* Color con transparencia usado en hover */
+    --fondo-claro: rgb(255, 255, 255);
+    --fondo-intermedio: rgb(250, 250, 250);
+    --fondo-oscuro: rgb(212, 215, 221);    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el ancho y alto de los elementos incluya el padding y el borde */
+}
+
+html {
+    scroll-behavior: smooth; /* Desplazamiento suave al hacer scroll */
+}
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Asegura que los enlaces no tengan subrayado por defecto */
+a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del texto */
+}
+
+/* Asegura que las listas no tengan margenes ni vinetas por defecto */
+ul, ol {
+    list-style: none; /* Elimina las viñetas y numeracion */
+}
+
+/* Mejora la accesibilidad y la legibilidad */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: bold; /* Asegura que los encabezados tengan un grosor de fuente consistente */
+}
+
+/* Ajustes de imagenes para que se adapten al contenedor */
+img {
+    max-width: 100%; /* La imagen no excederá el ancho de su contenedor */
+    height: auto; /* La altura se ajustará proporcionalmente */
+}

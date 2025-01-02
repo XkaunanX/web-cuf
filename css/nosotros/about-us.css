@@ -1,0 +1,26 @@
+/* About Section */
+.about {
+    padding: 250px 20px 110px;
+    text-align: center;
+    background-color: #f7f7f7;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Capa oscura */
+        url('../../assets/nosotros/hero.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita si es más pequeña que la sección */
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff; /* Cambié el color a blanco para que el texto contraste con la imagen de fondo */
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff; /* Cambié el color del texto a blanco también */
+}

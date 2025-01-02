@@ -1,0 +1,95 @@
+/* Servicios a la Comunidad Section */
+.servicios-comunidad {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.servicios-comunidad h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Contenedor de las tarjetas en fila */
+.servicios-lista {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre las tarjetas */
+    flex-wrap: wrap; /* Permite que se ajusten si el ancho es reducido */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo de cada servicio */
+.servicio {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fff;
+    padding: 30px;
+    width: 48%; /* Ajustamos el ancho de las tarjetas */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.servicio-icono img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.servicio-info {
+    text-align: left;
+}
+
+.servicio-info h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.servicio-info p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Estilos para los iconos */
+.servicio-icono {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .servicios-lista {
+        flex-direction: column;
+        gap: 20px; /* Espacio entre las tarjetas cuando están apiladas */
+    }
+
+    .servicio {
+        width: 100%; /* Las tarjetas ocupan todo el ancho en pantallas pequeñas */
+    }
+
+    .servicio-icono {
+        margin-bottom: 20px;
+    }
+
+    .servicio-info h3 {
+        font-size: 1.6rem;
+    }
+
+    .servicio-info p {
+        font-size: 1rem;
+    }
+}

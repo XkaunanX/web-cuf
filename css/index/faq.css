@@ -1,0 +1,147 @@
+
+.faq-index{
+    padding-top: 100px;
+    padding-bottom: 60px;
+    text-align: center;
+    color: #101e2c;
+}
+.faq-index h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.faq-index p{
+    color: #101e2c;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+article{
+    padding: none;
+}
+
+.faq-title p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.faq{
+    padding: 100px 60px 0px;
+    text-align: center;
+}
+
+.faq i{
+    font-weight: 600;
+}
+
+.faq-container{
+    display: grid;
+    gap: 2em;
+    padding-top: 50px;    
+}
+
+.faq-padding{
+    padding: 0;
+    transition: padding .3s;
+    border: 2px solid #101e2c;
+    border-radius: 0px;
+}
+
+.faq-padding--add{
+    padding-bottom: 20px;
+
+}
+
+.faq-answer{
+    padding: 0 30px 0;
+    overflow: hidden;
+}
+
+.faq-title{
+    text-align: left;
+    display: flex;
+    font-size: 30px;
+    padding: 40px 0 40px;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.faq-arrow{
+    border-radius: 50%;
+    background-color: #101e2c;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin-left: 10px;
+    transition:  transform .3s;
+}
+
+.faq-arrow--rotate{
+    transform: rotate(180deg);
+}
+
+.faq-show{
+    margin: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    height: 0;
+    transition: height .3s;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.faq-show a{ 
+    color: black;
+}
+
+.faq-copy{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+/**/
+.faq-body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.faq-body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.faq-img{
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+@media (max-width: 576px){
+    .faq-title{
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+
+    .faq-title{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .faq-index {
+        padding-top: 100px;
+        padding-bottom: 0px;
+    }
+}

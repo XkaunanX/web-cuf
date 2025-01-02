@@ -1,0 +1,112 @@
+/* Estilo general de la sección de formulario */
+.container-form {
+    padding-top: 140px;
+    line-height: 2;
+}
+
+/* Estilo para enlaces */
+.container-form a {
+    transition: 0.3s all ease;
+}
+
+/* Estilo para el boton*/
+.btn-primary{
+    background-color: #00509e;
+    border-color: #00509e;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+    background-color: #003366;
+}
+
+/* Estilo para el texto negro */
+.container-form .text-black {
+    color: #000;
+}
+
+/* Contenido de la sección */
+.container-form .content {
+    padding: 7rem 0;
+}
+
+/* Estilo para los títulos */
+.container-form h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.container-form h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Estilo para los campos del formulario */
+.container-form .form-control {
+    border: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 0;
+}
+
+/* Estilo para el campo de texto en foco */
+.container-form .form-control:active,
+.container-form .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #000;
+}
+
+/* Estilo para las etiquetas de los campos */
+.container-form .col-form-label {
+    color: #000;
+}
+
+/* Estilo para el botón y los campos del formulario */
+.container-form .btn,
+.container-form .form-control {
+    height: 55px;
+}
+
+/* Estilo para el botón al hacer clic */
+.container-form .btn:active,
+.container-form .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Estilo para los mensajes de error en el formulario */
+.container-form label.error {
+    font-size: 12px;
+    color: red;
+}
+
+/* Estilo para el campo de mensaje */
+.container-form #message {
+    resize: none;
+}
+
+/* Mensajes de advertencia y éxito */
+.container-form #form-message-warning,
+.container-form #form-message-success {
+    display: none;
+}
+
+.container-form #form-message-warning {
+    color: #B90B0B;
+}
+
+.container-form #form-message-success {
+    color: #55A44E;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Estilo para el mensaje de envío */
+.container-form .submitting {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000;
+}

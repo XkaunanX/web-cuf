@@ -1,0 +1,229 @@
+/* Contenedor principal del loader */
+.center-loader {
+    height: 100vh; /* Altura del contenedor que cubre toda la pantalla */
+    width: 100%; /* Ancho del contenedor */
+    background-color: #e8e8e8; /* Color de fondo del loader */
+    z-index: 1031; /* Asegura que el loader esté por encima de otros elementos */
+    position: fixed; /* Fija el loader en la pantalla */
+    display: flex; /* Utiliza flexbox para alinear el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    transition: all 0.5s ease; /* Transición suave al ocultar o mostrar el loader */
+}
+
+/* Estilo de la máquina de escribir */
+.typewriter {
+    --blue: #5C86FF; /* Color azul */
+    --blue-dark: #275EFE; /* Color azul oscuro */
+    --key: #fff; /* Color de las teclas */
+    --paper: #EEF0FD; /* Color del papel */
+    --text: #D3D4EC; /* Color del texto */
+    --tool: #FBC56C; /* Color de la herramienta */
+    --duration: 3s; /* Duración de las animaciones */
+    position: relative; /* Posiciona el contenido de forma relativa */
+    -webkit-animation: bounce05 var(--duration) linear infinite; /* Animación de rebote */
+    animation: bounce05 var(--duration) linear infinite; /* Animación de rebote */
+}
+
+/* Estilo de la diapositiva (slide) dentro de la máquina de escribir */
+.typewriter .slide {
+    width: 92px; /* Ancho de la diapositiva */
+    height: 20px; /* Alto de la diapositiva */
+    border-radius: 3px; /* Bordes redondeados */
+    margin-left: 14px; /* Espaciado a la izquierda */
+    transform: translateX(14px); /* Desplazamiento inicial */
+    background: linear-gradient(var(--blue), var(--blue-dark)); /* Fondo con gradiente */
+    -webkit-animation: slide05 var(--duration) ease infinite; /* Animación de deslizamiento */
+    animation: slide05 var(--duration) ease infinite; /* Animación de deslizamiento */
+}
+
+/* Estilo de los elementos decorativos en la diapositiva */
+.typewriter .slide:before, .typewriter .slide:after, .typewriter .slide i:before {
+    content: ""; /* Asegura que los pseudoelementos tengan contenido */
+    position: absolute; /* Posiciona los elementos absolutamente */
+    background: var(--tool); /* Color de la herramienta */
+}
+
+/* Estilo del pseudoelemento antes de la diapositiva */
+.typewriter .slide:before {
+    width: 2px; /* Ancho del pseudoelemento */
+    height: 8px; /* Alto del pseudoelemento */
+    top: 6px; /* Posición desde arriba */
+    left: 100%; /* Posición a la derecha */
+}
+
+/* Estilo del pseudoelemento después de la diapositiva */
+.typewriter .slide:after {
+    left: 94px; /* Posición desde la izquierda */
+    top: 3px; /* Posición desde arriba */
+    height: 14px; /* Alto del pseudoelemento */
+    width: 6px; /* Ancho del pseudoelemento */
+    border-radius: 3px; /* Bordes redondeados */
+}
+
+/* Estilo de los íconos dentro de la diapositiva */
+.typewriter .slide i {
+    display: block; /* Asegura que el ícono sea un bloque */
+    position: absolute; /* Posiciona el ícono de forma absoluta */
+    right: 100%; /* Posiciona el ícono a la izquierda de la diapositiva */
+    width: 6px; /* Ancho del ícono */
+    height: 4px; /* Alto del ícono */
+    top: 4px; /* Posición desde arriba */
+    background: var(--tool); /* Color de la herramienta */
+}
+
+/* Estilo del pseudoelemento antes del ícono */
+.typewriter .slide i:before {
+    right: 100%; /* Posición a la izquierda del ícono */
+    top: -2px; /* Desplazamiento hacia arriba */
+    width: 4px; /* Ancho del pseudoelemento */
+    border-radius: 2px; /* Bordes redondeados */
+    height: 14px; /* Alto del pseudoelemento */
+}
+
+/* Estilo del papel en la máquina de escribir */
+.typewriter .paper {
+    position: absolute; /* Posición absoluta */
+    left: 24px; /* Posición desde la izquierda */
+    top: -26px; /* Posición desde arriba */
+    width: 40px; /* Ancho del papel */
+    height: 46px; /* Alto del papel */
+    border-radius: 5px; /* Bordes redondeados */
+    background: var(--paper); /* Color del papel */
+    transform: translateY(46px); /* Posiciona el papel fuera de la pantalla */
+    -webkit-animation: paper05 var(--duration) linear infinite; /* Animación del papel */
+    animation: paper05 var(--duration) linear infinite; /* Animación del papel */
+}
+
+/* Estilo de la línea del papel */
+.typewriter .paper:before {
+    content: ""; /* Asegura que el pseudoelemento tenga contenido */
+    position: absolute; /* Posiciona el pseudoelemento */
+    left: 6px; /* Posición desde la izquierda */
+    right: 6px; /* Posición desde la derecha */
+    top: 7px; /* Posición desde arriba */
+    border-radius: 2px; /* Bordes redondeados */
+    height: 4px; /* Alto del pseudoelemento */
+    transform: scaleY(0.8); /* Escala verticalmente */
+    background: var(--text); /* Color del texto */
+    box-shadow: 0 12px 0 var(--text), 0 24px 0 var(--text), 0 36px 0 var(--text); /* Sombra de la línea */
+}
+
+/* Estilo del teclado dentro de la máquina de escribir */
+.typewriter .keyboard {
+    width: 120px; /* Ancho del teclado */
+    height: 56px; /* Alto del teclado */
+    margin-top: -10px; /* Desplazamiento hacia arriba */
+    z-index: 1; /* Asegura que el teclado esté por encima de otros elementos */
+    position: relative; /* Posiciona el teclado de forma relativa */
+}
+
+/* Estilo del borde del teclado */
+.typewriter .keyboard:before {
+    top: 0; /* Posición desde arriba */
+    left: 0; /* Posición desde la izquierda */
+    right: 0; /* Posición desde la derecha */
+    bottom: 0; /* Posición desde abajo */
+    border-radius: 7px; /* Bordes redondeados */
+    background: linear-gradient(135deg, var(--blue), var(--blue-dark)); /* Gradiente de color */
+    transform: perspective(10px) rotateX(2deg); /* Aplicación de perspectiva y rotación */
+    transform-origin: 50% 100%; /* Pivote de la transformación */
+}
+
+/* Estilo de las teclas del teclado */
+.typewriter .keyboard:after {
+    left: 2px; /* Posición desde la izquierda */
+    top: 25px; /* Posición desde arriba */
+    width: 11px; /* Ancho de la tecla */
+    height: 4px; /* Alto de la tecla */
+    border-radius: 2px; /* Bordes redondeados */
+    box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), /* Sombras de las teclas */
+                60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 
+                22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key),
+                60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
+    -webkit-animation: keyboard05 var(--duration) linear infinite; /* Animación de las teclas */
+    animation: keyboard05 var(--duration) linear infinite; /* Animación de las teclas */
+}
+
+/* Definición de las animaciones para el rebote, deslizamiento, movimiento del papel y teclado */
+@keyframes bounce05 {
+    85%, 92%, 100% {
+      transform: translateY(0);
+    }
+  
+    89% {
+      transform: translateY(-4px);
+    }
+  
+    95% {
+      transform: translateY(2px);
+    }
+}
+
+/* Definición de las animaciones para el deslizamiento de la diapositiva */
+@keyframes slide05 {
+    5% {
+      transform: translateX(14px);
+    }
+  
+    15%, 30% {
+      transform: translateX(6px);
+    }
+  
+    40%, 55% {
+      transform: translateX(0);
+    }
+  
+    65%, 70% {
+      transform: translateX(-4px);
+    }
+  
+    80%, 89% {
+      transform: translateX(-12px);
+    }
+  
+    100% {
+      transform: translateX(14px);
+    }
+}
+
+/* Definición de las animaciones para el movimiento del papel */
+@keyframes paper05 {
+    5% {
+      transform: translateY(46px);
+    }
+  
+    20%, 30% {
+      transform: translateY(34px);
+    }
+  
+    40%, 55% {
+      transform: translateY(22px);
+    }
+  
+    65%, 70% {
+      transform: translateY(10px);
+    }
+  
+    80%, 85% {
+      transform: translateY(0);
+    }
+  
+    92%, 100% {
+      transform: translateY(46px);
+    }
+}
+
+/* Definición de las animaciones para las teclas del teclado */
+@keyframes keyboard05 {
+    5%, 12%, 21%, 30%, 39%, 48%, 57%, 66%, 75%, 84% {
+      box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), /* Sombras de teclas */
+                  60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key),
+                  22px 10px 0 var(--key), 37px 10px 0 var(--key), 52px 10px 0 var(--key),
+                  60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
+    }
+  
+    10%, 25%, 35%, 50%, 60%, 70%, 80%, 90%, 100% {
+      box-shadow: none; /* Las teclas desaparecen */
+    }
+}
