@@ -12,6 +12,15 @@ Este proyecto tiene como objetivo proporcionar un sitio web interactivo y funcio
 - **Bootstrap**: Un framework de diseño responsivo que facilita la creación de interfaces limpias y profesionales.
 - **Formspree**: Un servicio que permite enviar formularios de contacto sin necesidad de configurar un backend.
 
+### HTML
+![HTML](https://upload.wikimedia.org/wikipedia/commons/7/73/HTML5_logo_and_wordmark.svg)
+
+### CSS
+![CSS](https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg)
+
+### JavaScript
+![Jav
+
 ## Características Principales
 
 1. **Diseño Responsivo**: El sitio se adapta automáticamente a diferentes tamaños de pantalla, desde dispositivos móviles hasta computadoras de escritorio, gracias a Bootstrap.
